@@ -6,35 +6,35 @@ import org.junit.Test;
 public class Problem4Test {
 
     @Test
-    public void potentialAnagramTest() {
+    public void potentialPalindromeTest() {
         //given
         String input = "aaabbbb";
 
         //when
-        String actual = Problem4.anagramCheck(input);
+        String actual = Problem4.palindromeCheck(input);
         //then
         String expected = "YES";
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void potentialAnagramTestTwo() {
+    public void potentialPalindromeTestTwo() {
         //given
         String input = "cdefghmnopqrstuvw";
 
         //when
-        String actual = Problem4.anagramCheck(input);
+        String actual = Problem4.palindromeCheck(input);
         //then
         String expected = "NO";
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void potentialAnagramTestThree() {
+    public void potentialPalindromeTestThree() {
         //given
         String input = "cdcdcdcdeeeef";
         //when
-        String actual = Problem4.anagramCheck(input);
+        String actual = Problem4.palindromeCheck(input);
         //then
         String expected = "YES";
         Assert.assertEquals(actual, expected);
