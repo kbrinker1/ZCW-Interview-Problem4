@@ -40,5 +40,17 @@ public class Problem4Test {
         Assert.assertEquals(actual, expected);
     }
 
+    @Test
+    public void potentialPalindromeTestFour() {
+        //given
+        String input = "aabbaaaccc";
+
+        //when
+        String actual = Problem4.palindromeCheck(input);
+        //then
+        String expected = "NO";
+        Assert.assertEquals(actual, expected);
+    }
+
 }
 
